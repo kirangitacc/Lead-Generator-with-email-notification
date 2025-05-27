@@ -25,7 +25,7 @@ app.post('/api/leads', async (req, res) => {
   console.log('Validated lead data:', { name, email, company, message });   
 
   // Forward data to n8n webhook (replace with your actual n8n webhook URL)
-  const webhookUrl = 'http://localhost:5678/webhook/4cd1904e-9c1e-4498-964c-f367fc397bdc'; // <-- Replace with your n8n webhook URL
+  const webhookUrl = 'https://kiran2411.app.n8n.cloud/webhook/ffa85e74-a9d3-423d-9a76-a61a62a8d266'; // <-- Replace with your n8n webhook URL
   const parsedUrl = new URL(webhookUrl);
 
     console.log('Parsed webhook URL:', parsedUrl);
