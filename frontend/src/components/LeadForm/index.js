@@ -36,7 +36,7 @@ const LeadForm = () => {
     }
     // Send data to backend API (replace URL with your backend endpoint)
     try {
-      const response = await fetch('http://localhost:5000/api/leads', {
+      const response = await fetch('https://lead-generator-with-email-notification.onrender.com/api/leads', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form)
